@@ -44,7 +44,9 @@
     <nav id="sidebar">
         <div id="header-wrapper">
             <div id="header">
-                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">
+                    <img src="{{ url('theme://images/logo.png') }}" title="L. L. Slim Documentation" alt="Documentation Logo"/>
+                </a>
                 <div class="searchbox">
                     <label for="search-by"><i class="fa fa-search"></i></label>
                     <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN2_SEARCH_DOCUMENTATION'|t }}"
